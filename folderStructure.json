@@ -1,0 +1,76 @@
+{
+  "$schema": "node_modules/eslint-plugin-project-structure/folderStructure.schema.json",
+  "structure": {
+    "children": [
+      {
+        "extension": "*"
+      },
+      {
+        "name": "src",
+        "children": [
+          {
+            "ruleId": "hooks_folder"
+          },
+          {
+            "name": "features",
+            "ruleId": "components_folder"
+          }
+        ]
+      }
+    ]
+  },
+  "rules": {
+    "hooks_folder": {
+      "name": "hooks",
+      "children": [
+        {
+          "name": "/^use{PascalCase}$/",
+          "children": [
+            {
+              "ruleId": "hooks_folder"
+            },
+            {
+              "name": "/^{parentName}(\\.(test|api|types))?$/",
+              "extension": "ts"
+            }
+          ]
+        },
+        {
+          "name": "/^use{PascalCase}(\\.test)?$/",
+          "extension": "ts"
+        }
+      ]
+    },
+    "component_folder": {
+      "name": "/^{PascalCase}$/",
+      "children": [
+        {
+          "ruleId": "components_folder"
+        },
+        {
+          "ruleId": "hooks_folder"
+        },
+        {
+          "name": "/^{parentName}(\\.(api|types))?$/",
+          "extension": ".ts"
+        },
+        {
+          "name": "/^{ParentName}(\\.test)?$/",
+          "extension": ".tsx"
+        }
+      ]
+    },
+    "components_folder": {
+      "name": "components",
+      "children": [
+        {
+          "ruleId": "component_folder"
+        },
+        {
+          "name": "/^{PascalCase}(\\.test)?$/",
+          "extension": ".tsx"
+        }
+      ]
+    }
+  }
+}

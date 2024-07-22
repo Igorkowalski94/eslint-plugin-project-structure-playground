@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/eslint-plugin-project-structure/independentModules.schema.json",
+  "debugMode": true,
+  "modules": [
+    {
+      "name": "Features",
+      "pattern": "features/**",
+      "allowImportsFrom": ["{familyImports}"]
+    },
+    {
+      "name": "Global hooks",
+      "pattern": "hooks/**",
+      "allowImportsFrom": ["{familyImports}"]
+    }
+  ],
+  "reusableImportPatterns": {
+    "privateFolders": ["(hooks|components)"],
+    "privateFiles": ["*.(types|test|api).(ts|tsx)"],
+
+    "notPrivateFilesAndFolders": [
+      "!(**/{privateFiles})",
+      "!(**/{privateFolders}/**)"
+    ],
+
+    "globalHooks": ["hooks/**", "{notPrivateFilesAndFolders}"],
+
+    "familyImports": [
+      ["{family}/*", "!{family}/*.test.ts"],
+
+      [
+        "{family}/{privateFolders}/*/*",
+        "!{family}/{privateFolders}/*/{privateFiles}"
+      ],
+
+      ["{family}/*/*", "!{family}/*/{privateFiles}"]
+    ]
+  }
+}
