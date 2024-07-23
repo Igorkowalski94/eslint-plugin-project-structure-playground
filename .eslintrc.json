@@ -37,7 +37,7 @@
     ]
   },
   "settings": {
-    "project-structure/folder-structure-config-path": "folderStructure.json",
-    "project-structure/independent-modules-config-path": "independentModules.json"
+    "project-structure/folder-structure-config-path": "folderStructure.jsonc",
+    "project-structure/independent-modules-config-path": "independentModules.jsonc"
   }
 }
