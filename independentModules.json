@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/eslint-plugin-project-structure/independentModules.schema.json",
-  "debugMode": true,
+  "debugMode": false,
   "modules": [
     {
       "name": "Features",
