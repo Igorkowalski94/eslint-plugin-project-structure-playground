@@ -5,7 +5,7 @@
     {
       "name": "Features",
       "pattern": "features/**",
-      "allowImportsFrom": ["{familyImports}", "{globalHooks}"]
+      "allowImportsFrom": ["{familyImports}", "{globalHooks}", "{features}"]
     },
     {
       "name": "Global hooks",
@@ -16,13 +16,13 @@
       "name": "Only files",
       "pattern": "onlyFiles/**",
       "allowExternalImports": false,
-      "allowImportsFrom": [] // All private
+      "allowImportsFrom": []
     },
     {
       "name": "Only folders",
       "pattern": "onlyFolders/**",
       "allowExternalImports": false,
-      "allowImportsFrom": [] // All private
+      "allowImportsFrom": []
     }
   ],
   "reusableImportPatterns": {
@@ -35,6 +35,7 @@
     ],
 
     "globalHooks": [["hooks/**", "{notPrivateFilesAndFolders}"]],
+    "features": [["features/**", "{notPrivateFilesAndFolders}"]],
 
     "familyImports": [
       ["{family}/*", "!{family}/*.test.ts"],
