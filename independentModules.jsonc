@@ -11,11 +11,23 @@
       "name": "Global hooks",
       "pattern": "hooks/**",
       "allowImportsFrom": ["{familyImports}", "{globalHooks}"]
+    },
+    {
+      "name": "Only files",
+      "pattern": "onlyFiles/**",
+      "allowExternalImports": false,
+      "allowImportsFrom": [] // All private
+    },
+    {
+      "name": "Only folders",
+      "pattern": "onlyFolders/**",
+      "allowExternalImports": false,
+      "allowImportsFrom": [] // All private
     }
   ],
   "reusableImportPatterns": {
     "privateFolders": ["(hooks|components)"],
-    "privateFiles": ["*.(types|test|api).(ts|tsx)"],
+    "privateFiles": ["*.(types|test|api|consts).(ts|tsx)"],
 
     "notPrivateFilesAndFolders": [
       "!(**/{privateFiles})",

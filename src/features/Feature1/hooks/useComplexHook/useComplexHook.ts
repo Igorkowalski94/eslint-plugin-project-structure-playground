@@ -1,3 +1,3 @@
-export const useComplexHook = "";
-export type UseComplexHookProps = "";
+export const useComplexHook = () => "";
+export interface UseComplexHookProps {}
 export type UseComplexHookReturn = "";

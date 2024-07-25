@@ -14,6 +14,12 @@
           {
             "name": "features",
             "ruleId": "components_folder"
+          },
+          {
+            "ruleId": "onlyFiles_folder"
+          },
+          {
+            "ruleId": "onlyFolders_folder"
           }
         ]
       }
@@ -30,7 +36,7 @@
               "ruleId": "hooks_folder"
             },
             {
-              "name": "/^{parentName}(\\.(test|api|types))?$/",
+              "name": "/^{parentName}(\\.(test|api|types|consts))?$/",
               "extension": "ts"
             }
           ]
@@ -51,7 +57,7 @@
           "ruleId": "hooks_folder"
         },
         {
-          "name": "/^{parentName}(\\.(api|types))?$/",
+          "name": "/^{parentName}(\\.(api|types|consts))?$/",
           "extension": ".ts"
         },
         {
@@ -69,6 +75,29 @@
         {
           "name": "/^{PascalCase}(\\.test)?$/",
           "extension": ".tsx"
+        }
+      ]
+    },
+    "onlyFiles_folder": {
+      "name": "onlyFiles",
+      "children": [
+        {
+          "name": "/^{camelCase}?$/",
+          "extension": ".ts"
+        }
+      ]
+    },
+    "onlyFolders_folder": {
+      "name": "onlyFolders",
+      "children": [
+        {
+          "name": "/^{camelCase}?$/",
+          "children": [
+            {
+              "name": "/^{camelCase}?$/",
+              "extension": ".ts"
+            }
+          ]
         }
       ]
     }

@@ -1,2 +1,3 @@
-export type ComplexComponentProps = "";
-export const ComplexComponent = "";
+export interface ComplexComponentProps {}
+export type ComplexComponentReturn = "";
+export const ComplexComponent = () => "";

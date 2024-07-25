@@ -1,2 +1,3 @@
 export type Feature1Props = "";
-export const Feature1 = "";
+export type Feature1Return = "";
+export const Feature1 = () => "";

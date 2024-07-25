@@ -1,3 +1,3 @@
-export const useSimpleHook = "";
-export type UseSimpleHookProps = "";
+export const useSimpleHook = () => "";
+export interface UseSimpleHookProps {}
 export type UseSimpleHookReturn = "";

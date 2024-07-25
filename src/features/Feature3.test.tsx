@@ -1,1 +1,1 @@
-export const Feature3Test = "";
+export const feature3Test = "";

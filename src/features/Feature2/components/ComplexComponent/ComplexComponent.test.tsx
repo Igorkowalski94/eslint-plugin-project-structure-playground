@@ -1,1 +1,1 @@
-export const ComplexComponentTest = "";
+export const complexComponentTest = "";

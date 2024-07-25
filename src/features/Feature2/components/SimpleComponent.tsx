@@ -1,2 +1,3 @@
-export const SimpleComponent = "";
-export type SimpleComponentProps = "";
+export const SimpleComponent = () => "";
+export interface SimpleComponentProps {}
+export type SimpleComponentReturn = "";
