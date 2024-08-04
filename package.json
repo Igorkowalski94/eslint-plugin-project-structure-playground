@@ -13,7 +13,7 @@
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-project-structure": "^2.0.14",
+    "eslint-plugin-project-structure": "^2.1.1",
     "typescript": "^5.5.3"
   }
 }

@@ -3,7 +3,7 @@
   "structure": {
     "children": [
       {
-        "extension": "*"
+        "name": "*"
       },
       {
         "name": "src",
@@ -30,25 +30,23 @@
       "name": "hooks",
       "children": [
         {
-          "name": "/^use{PascalCase}$/",
+          "name": "use{PascalCase}",
           "children": [
             {
               "ruleId": "hooks_folder"
             },
             {
-              "name": "/^{parentName}(\\.(test|api|types|consts))?$/",
-              "extension": "ts"
+              "name": "{parentName}(.(test|api|types|consts))?.ts"
             }
           ]
         },
         {
-          "name": "/^use{PascalCase}(\\.test)?$/",
-          "extension": "ts"
+          "name": "use{PascalCase}(.test)?.ts"
         }
       ]
     },
     "component_folder": {
-      "name": "/^{PascalCase}$/",
+      "name": "{PascalCase}",
       "children": [
         {
           "ruleId": "components_folder"
@@ -57,12 +55,10 @@
           "ruleId": "hooks_folder"
         },
         {
-          "name": "/^{parentName}(\\.(api|types|consts))?$/",
-          "extension": ".ts"
+          "name": "{parentName}(.(api|types|consts))?.ts"
         },
         {
-          "name": "/^{ParentName}(\\.test)?$/",
-          "extension": ".tsx"
+          "name": "{ParentName}(.test)?.tsx"
         }
       ]
     },
@@ -73,8 +69,7 @@
           "ruleId": "component_folder"
         },
         {
-          "name": "/^{PascalCase}(\\.test)?$/",
-          "extension": ".tsx"
+          "name": "{PascalCase}(.test)?.tsx"
         }
       ]
     },
@@ -82,8 +77,7 @@
       "name": "onlyFiles",
       "children": [
         {
-          "name": "/^{camelCase}?$/",
-          "extension": ".ts"
+          "name": "{camelCase}.ts"
         }
       ]
     },
@@ -91,11 +85,10 @@
       "name": "onlyFolders",
       "children": [
         {
-          "name": "/^{camelCase}?$/",
+          "name": "{camelCase}",
           "children": [
             {
-              "name": "/^{camelCase}?$/",
-              "extension": ".ts"
+              "name": "{camelCase}.ts"
             }
           ]
         }

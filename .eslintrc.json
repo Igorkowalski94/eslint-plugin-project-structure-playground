@@ -14,13 +14,13 @@
     "project-structure/folder-structure": "error",
     "project-structure/independent-modules": "error",
     "project-structure/naming-rules": [
-      2,
+      "error",
       {
         "filePattern": "**/*consts.ts",
         "rules": [
           {
             "nameType": "VariableDeclarator",
-            "allowNames": ["/^{SNAKE_CASE}$/"]
+            "allowNames": ["{SNAKE_CASE}"]
           }
         ]
       },
@@ -29,11 +29,11 @@
         "rules": [
           {
             "nameType": ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
-            "allowNamesFileRoot": ["/^{PascalCase}$/"]
+            "allowNamesFileRoot": ["{PascalCase}"]
           },
           {
             "nameType": "TSEnumDeclaration",
-            "allowNames": ["/^{SNAKE_CASE}$/"]
+            "allowNames": ["{SNAKE_CASE}"]
           }
         ]
       },
@@ -42,19 +42,19 @@
         "rules": [
           {
             "nameType": ["ArrowFunctionExpression", "FunctionDeclaration"],
-            "allowNamesFileRoot": ["/^{filename_PascalCase}$/"],
-            "allowNames": ["/^{camelCase}$/"]
+            "allowNamesFileRoot": ["{filename_PascalCase}"],
+            "allowNames": ["{camelCase}"]
           },
           {
             "nameType": ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
             "allowNamesFileRoot": [
-              "/^{filename_PascalCase}Props$/",
-              "/^{filename_PascalCase}Return$/"
+              "{filename_PascalCase}Props",
+              "{filename_PascalCase}Return"
             ]
           },
           {
             "nameType": ["VariableDeclarator"],
-            "allowNames": ["/^{camelCase}$/"]
+            "allowNames": ["{camelCase}"]
           }
         ]
       },
@@ -63,19 +63,19 @@
         "rules": [
           {
             "nameType": ["ArrowFunctionExpression", "FunctionDeclaration"],
-            "allowNamesFileRoot": ["/^{filename_camelCase}$/"],
-            "allowNames": ["/^{camelCase}$/"]
+            "allowNamesFileRoot": ["{filename_camelCase}"],
+            "allowNames": ["{camelCase}"]
           },
           {
             "nameType": ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
             "allowNamesFileRoot": [
-              "/^{filename_PascalCase}Props$/",
-              "/^{filename_PascalCase}Return$/"
+              "{filename_PascalCase}Props",
+              "{filename_PascalCase}Return"
             ]
           },
           {
             "nameType": "VariableDeclarator",
-            "allowNames": ["/^{camelCase}$/"]
+            "allowNames": ["{camelCase}"]
           }
         ]
       }
