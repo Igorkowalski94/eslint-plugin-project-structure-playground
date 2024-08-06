@@ -20,6 +20,9 @@
           },
           {
             "ruleId": "onlyFolders_folder"
+          },
+          {
+            "ruleId": "images_folder"
           }
         ]
       }
@@ -91,6 +94,14 @@
               "name": "{camelCase}.ts"
             }
           ]
+        }
+      ]
+    },
+    "images_folder": {
+      "name": "images",
+      "children": [
+        {
+          "name": "{SNAKE_CASE}.(svg|jpg|png|ico)"
         }
       ]
     }

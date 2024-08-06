@@ -10,6 +10,16 @@ Playground for [eslint-plugin-project-structure](https://github.com/Igorkowalski
 
 ## Getting started
 
+### Step 1 (optional)
+
+The project uses ESLint's new config system as default. If you want to test on the old eslint config, follow these steps:
+
+- Remove package.json
+- Remove eslint.config.mjs
+- Rename packageLegacyConfig.json to package.json
+
+### Step 2
+
 ```bsh
 npm install
 ```
@@ -23,10 +33,11 @@ npm run lint
 ```
 .
 ├── ...
-├── 📄 folderStructure.json
-├── 📄 independentModules.json
+├── 📄 folderStructure.mjs
+├── 📄 independentModules.mjs
 ├── 📄 .eslintrc.json
 └── 📂 src
+    ├── 📂 images       // Private
     ├── 📂 onlyFolders  // Private
     ├── 📂 onlyFiles    // Private
     ├── 📂 hooks
