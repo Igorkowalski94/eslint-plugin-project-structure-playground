@@ -42,9 +42,10 @@ npm run lint
 ```
 .
 ├── ...
+├── 📄 namingRules.mjs
 ├── 📄 folderStructure.mjs
 ├── 📄 independentModules.mjs
-├── 📄 .eslintrc.json
+├── 📄 eslint.config.mjs
 └── 📂 src
     ├── 📂 images       // Private
     ├── 📂 onlyFolders  // Private
