@@ -16,6 +16,9 @@ The project uses ESLint's new config system as default. If you want to test on t
 
 - Remove package.json
 - Remove eslint.config.mjs
+- Remove independentModules.mjs
+- Remove namingRules.mjs
+- Remove folderStructure.mjs
 - Rename packageLegacyConfig.json to package.json
 
 ### Step 2
@@ -23,6 +26,12 @@ The project uses ESLint's new config system as default. If you want to test on t
 ```bsh
 npm install
 ```
+
+```bsh
+npm run lint:watch
+```
+
+or
 
 ```bsh
 npm run lint

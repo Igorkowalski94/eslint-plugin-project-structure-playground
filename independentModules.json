@@ -1,4 +1,5 @@
 {
+  // !!! This configuration is just an example and is used in .eslintrc !!!
   "$schema": "node_modules/eslint-plugin-project-structure/independentModules.schema.json",
   "debugMode": false,
   "modules": [
