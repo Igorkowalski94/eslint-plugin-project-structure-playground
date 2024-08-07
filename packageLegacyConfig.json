@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src"
+    "lint": "eslint .",
+    "lint:watch": "npx nodemon -e ts,tsx,js,jsx,mjs,json,svg,jpg,png, --exec eslint ."
   },
   "keywords": [],
   "author": "",
