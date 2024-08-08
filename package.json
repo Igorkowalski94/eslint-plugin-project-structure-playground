@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.1.0",
     "@eslint/js": "^9.8.0",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.8.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1",
-    "eslint-plugin-project-structure": "^2.1.5"
+    "eslint-plugin-project-structure": "^2.1.7"
   }
 }

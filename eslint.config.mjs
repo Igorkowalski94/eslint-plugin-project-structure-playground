@@ -1,13 +1,14 @@
 // @ts-check
 
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import {
   projectStructureParser,
   projectStructurePlugin,
 } from "eslint-plugin-project-structure";
+
 import { folderStructureConfig } from "./folderStructure.mjs";
 import { independentModulesConfig } from "./independentModules.mjs";
 import { namingRulesConfig } from "./namingRules.mjs";
@@ -52,7 +53,7 @@ export default tseslint.config(
       ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
     ],
-    files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mjs"],
     languageOptions: {
       parserOptions: {
         projectService: true,
