@@ -17,14 +17,7 @@ export const independentModulesConfig = createIndependentModules({
     },
     {
       name: "Examples",
-      pattern:
-        "(onlyFilesExample|onlyFoldersExample|enforceExistenceExample|extensionsExample)/**",
-      allowExternalImports: false,
-      allowImportsFrom: [],
-    },
-    {
-      name: "Path aliases example",
-      pattern: "pathAliasesExample.ts",
+      pattern: "examples/**",
       allowExternalImports: false,
       allowImportsFrom: ["{storiesFolder}"],
     },
@@ -38,7 +31,7 @@ export const independentModulesConfig = createIndependentModules({
       "!(**/{privateFolders}/**)",
     ],
 
-    storiesFolder: ["enforceExistenceExample/stories/**"],
+    storiesFolder: ["examples/enforceExistenceExample/stories/**"],
     globalHooks: [["hooks/**", "{notPrivateFilesAndFolders}"]],
     features: [["features/**", "{notPrivateFilesAndFolders}"]],
 
