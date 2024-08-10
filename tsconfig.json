@@ -12,6 +12,9 @@
     "noEmit": true,
     "skipLibCheck": true,
     "baseUrl": "src",
+    "paths": {
+      "@stories/*": ["examples/enforceExistenceExample/stories/*"]
+    },
     "allowJs": true
   },
   "include": [

@@ -19,13 +19,7 @@ export const folderStructureConfig = createFolderStructure({
             ruleId: "components_folder",
           },
           {
-            ruleId: "onlyFiles_folder",
-          },
-          {
-            ruleId: "onlyFolders_folder",
-          },
-          {
-            ruleId: "images_folder",
+            ruleId: "examples_folder",
           },
         ],
       },
@@ -79,16 +73,16 @@ export const folderStructureConfig = createFolderStructure({
         },
       ],
     },
-    onlyFiles_folder: {
-      name: "onlyFiles",
+    onlyFilesExample_folder: {
+      name: "onlyFilesExample",
       children: [
         {
           name: "{camelCase}.ts",
         },
       ],
     },
-    onlyFolders_folder: {
-      name: "onlyFolders",
+    onlyFoldersExample_folder: {
+      name: "onlyFoldersExample",
       children: [
         {
           name: "{camelCase}",
@@ -100,11 +94,43 @@ export const folderStructureConfig = createFolderStructure({
         },
       ],
     },
-    images_folder: {
-      name: "images",
+    extensionsExample_folder: {
+      name: "extensionsExample",
       children: [
         {
           name: "{SNAKE_CASE}.(svg|jpg|png|ico)",
+        },
+      ],
+    },
+    enforceExistenceExample_folder: {
+      name: "enforceExistenceExample",
+      children: [
+        {
+          name: "stories",
+          children: [
+            {
+              name: "{camelCase}.stories.tsx",
+            },
+          ],
+        },
+        {
+          name: "{PascalCase}.test.tsx",
+        },
+        {
+          name: "{PascalCase}.tsx",
+          enforceExistence: ["stories/{name}.stories.tsx", "{Name}.test.tsx"],
+        },
+      ],
+    },
+    examples_folder: {
+      name: "examples",
+      children: [
+        { ruleId: "enforceExistenceExample_folder" },
+        { ruleId: "extensionsExample_folder" },
+        { ruleId: "onlyFilesExample_folder" },
+        { ruleId: "onlyFoldersExample_folder" },
+        {
+          name: "pathAliasesExample.ts",
         },
       ],
     },

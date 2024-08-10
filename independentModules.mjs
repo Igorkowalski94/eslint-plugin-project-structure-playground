@@ -16,16 +16,17 @@ export const independentModulesConfig = createIndependentModules({
       allowImportsFrom: ["{familyImports}", "{globalHooks}"],
     },
     {
-      name: "Only files",
-      pattern: "onlyFiles/**",
+      name: "Examples",
+      pattern:
+        "(onlyFilesExample|onlyFoldersExample|enforceExistenceExample|extensionsExample)/**",
       allowExternalImports: false,
       allowImportsFrom: [],
     },
     {
-      name: "Only folders",
-      pattern: "onlyFolders/**",
+      name: "Path aliases example",
+      pattern: "pathAliasesExample.ts",
       allowExternalImports: false,
-      allowImportsFrom: [],
+      allowImportsFrom: ["{storiesFolder}"],
     },
   ],
   reusableImportPatterns: {
@@ -37,6 +38,7 @@ export const independentModulesConfig = createIndependentModules({
       "!(**/{privateFolders}/**)",
     ],
 
+    storiesFolder: ["enforceExistenceExample/stories/**"],
     globalHooks: [["hooks/**", "{notPrivateFilesAndFolders}"]],
     features: [["features/**", "{notPrivateFilesAndFolders}"]],
 
