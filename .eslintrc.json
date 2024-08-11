@@ -65,7 +65,7 @@
                 "allowNamesFileRoot": ["{PascalCase}"]
               },
               {
-                "nameType": "TSEnumDeclaration",
+                "nameType": "enum",
                 "allowNames": ["{SNAKE_CASE}"]
               }
             ]
