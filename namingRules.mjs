@@ -7,7 +7,7 @@ export const namingRulesConfig = createNamingRules([
     filePattern: "**/*consts.ts",
     rules: [
       {
-        nameType: "VariableDeclarator",
+        nameType: "variable",
         allowNames: ["{SNAKE_CASE}"],
       },
     ],
@@ -16,11 +16,11 @@ export const namingRulesConfig = createNamingRules([
     filePattern: "**/*.types.ts",
     rules: [
       {
-        nameType: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
+        nameType: ["interface", "type"],
         allowNamesFileRoot: ["{PascalCase}"],
       },
       {
-        nameType: "TSEnumDeclaration",
+        nameType: "enum",
         allowNames: ["{SNAKE_CASE}"],
       },
     ],
@@ -29,19 +29,19 @@ export const namingRulesConfig = createNamingRules([
     filePattern: "**/*.tsx",
     rules: [
       {
-        nameType: ["ArrowFunctionExpression", "FunctionDeclaration"],
+        nameType: ["arrowFunction", "function"],
         allowNamesFileRoot: ["{filename_PascalCase}"],
         allowNames: ["{camelCase}"],
       },
       {
-        nameType: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
+        nameType: ["interface", "type"],
         allowNamesFileRoot: [
           "{filename_PascalCase}Props",
           "{filename_PascalCase}Return",
         ],
       },
       {
-        nameType: ["VariableDeclarator"],
+        nameType: ["variable"],
         allowNames: ["{camelCase}"],
       },
     ],
@@ -50,19 +50,19 @@ export const namingRulesConfig = createNamingRules([
     filePattern: "**/*.ts",
     rules: [
       {
-        nameType: ["ArrowFunctionExpression", "FunctionDeclaration"],
+        nameType: ["arrowFunction", "function"],
         allowNamesFileRoot: ["{filename_camelCase}"],
         allowNames: ["{camelCase}"],
       },
       {
-        nameType: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration"],
+        nameType: ["interface", "type"],
         allowNamesFileRoot: [
           "{filename_PascalCase}Props",
           "{filename_PascalCase}Return",
         ],
       },
       {
-        nameType: "VariableDeclarator",
+        nameType: "variable",
         allowNames: ["{camelCase}"],
       },
     ],

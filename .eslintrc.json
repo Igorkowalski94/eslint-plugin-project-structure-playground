@@ -52,7 +52,7 @@
             "filePattern": "**/*consts.ts",
             "rules": [
               {
-                "nameType": "VariableDeclarator",
+                "nameType": "variable",
                 "allowNames": ["{SNAKE_CASE}"]
               }
             ]
@@ -61,10 +61,7 @@
             "filePattern": "**/*.types.ts",
             "rules": [
               {
-                "nameType": [
-                  "TSInterfaceDeclaration",
-                  "TSTypeAliasDeclaration"
-                ],
+                "nameType": ["interface", "type"],
                 "allowNamesFileRoot": ["{PascalCase}"]
               },
               {
@@ -77,22 +74,19 @@
             "filePattern": "**/*.tsx",
             "rules": [
               {
-                "nameType": ["ArrowFunctionExpression", "FunctionDeclaration"],
+                "nameType": ["arrowFunction", "function"],
                 "allowNamesFileRoot": ["{filename_PascalCase}"],
                 "allowNames": ["{camelCase}"]
               },
               {
-                "nameType": [
-                  "TSInterfaceDeclaration",
-                  "TSTypeAliasDeclaration"
-                ],
+                "nameType": ["interface", "type"],
                 "allowNamesFileRoot": [
                   "{filename_PascalCase}Props",
                   "{filename_PascalCase}Return"
                 ]
               },
               {
-                "nameType": ["VariableDeclarator"],
+                "nameType": ["variable"],
                 "allowNames": ["{camelCase}"]
               }
             ]
@@ -101,22 +95,19 @@
             "filePattern": "**/*.ts",
             "rules": [
               {
-                "nameType": ["ArrowFunctionExpression", "FunctionDeclaration"],
+                "nameType": ["arrowFunction", "function"],
                 "allowNamesFileRoot": ["{filename_camelCase}"],
                 "allowNames": ["{camelCase}"]
               },
               {
-                "nameType": [
-                  "TSInterfaceDeclaration",
-                  "TSTypeAliasDeclaration"
-                ],
+                "nameType": ["interface", "type"],
                 "allowNamesFileRoot": [
                   "{filename_PascalCase}Props",
                   "{filename_PascalCase}Return"
                 ]
               },
               {
-                "nameType": "VariableDeclarator",
+                "nameType": "variable",
                 "allowNames": ["{camelCase}"]
               }
             ]
