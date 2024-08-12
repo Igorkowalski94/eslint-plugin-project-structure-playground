@@ -5,21 +5,15 @@ import { createFolderStructure } from "eslint-plugin-project-structure";
 export const folderStructureConfig = createFolderStructure({
   structure: {
     children: [
-      {
-        name: "*",
-      },
+      { name: "*" },
       {
         name: "src",
         children: [
-          {
-            ruleId: "hooks_folder",
-          },
+          { ruleId: "hooks_folder" },
+          { ruleId: "examples_folder" },
           {
             name: "features",
             ruleId: "components_folder",
-          },
-          {
-            ruleId: "examples_folder",
           },
         ],
       },
@@ -32,90 +26,54 @@ export const folderStructureConfig = createFolderStructure({
         {
           name: "use{PascalCase}",
           children: [
-            {
-              ruleId: "hooks_folder",
-            },
-            {
-              name: "{parentName}(.(test|api|types|consts))?.ts",
-            },
+            { ruleId: "hooks_folder" },
+            { name: "{parentName}(.(test|api|types|consts))?.ts" },
           ],
         },
-        {
-          name: "use{PascalCase}(.test)?.ts",
-        },
+        { name: "use{PascalCase}(.test)?.ts" },
       ],
     },
     component_folder: {
       name: "{PascalCase}",
       children: [
-        {
-          ruleId: "components_folder",
-        },
-        {
-          ruleId: "hooks_folder",
-        },
-        {
-          name: "{parentName}(.(api|types|consts))?.ts",
-        },
-        {
-          name: "{ParentName}(.test)?.tsx",
-        },
+        { ruleId: "components_folder" },
+        { ruleId: "hooks_folder" },
+        { name: "{parentName}(.(api|types|consts))?.ts" },
+        { name: "{ParentName}(.test)?.tsx" },
       ],
     },
     components_folder: {
       name: "components",
       children: [
-        {
-          ruleId: "component_folder",
-        },
-        {
-          name: "{PascalCase}(.test)?.tsx",
-        },
+        { ruleId: "component_folder" },
+        { name: "{PascalCase}(.test)?.tsx" },
       ],
     },
     onlyFilesExample_folder: {
       name: "onlyFilesExample",
-      children: [
-        {
-          name: "{camelCase}.ts",
-        },
-      ],
+      children: [{ name: "{camelCase}.ts" }],
     },
     onlyFoldersExample_folder: {
       name: "onlyFoldersExample",
       children: [
         {
           name: "{camelCase}",
-          children: [
-            {
-              name: "{camelCase}.ts",
-            },
-          ],
+          children: [{ name: "{camelCase}.ts" }],
         },
       ],
     },
     extensionsExample_folder: {
       name: "extensionsExample",
-      children: [
-        {
-          name: "{SNAKE_CASE}.(svg|jpg|png|ico)",
-        },
-      ],
+      children: [{ name: "{SNAKE_CASE}.(svg|jpg|png|ico)" }],
     },
     enforceExistenceExample_folder: {
       name: "enforceExistenceExample",
       children: [
         {
           name: "stories",
-          children: [
-            {
-              name: "{camelCase}.stories.tsx",
-            },
-          ],
+          children: [{ name: "{camelCase}.stories.tsx" }],
         },
-        {
-          name: "{PascalCase}.test.tsx",
-        },
+        { name: "{PascalCase}.test.tsx" },
         {
           name: "{PascalCase}.tsx",
           enforceExistence: ["stories/{name}.stories.tsx", "{Name}.test.tsx"],
