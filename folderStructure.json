@@ -1,22 +1,20 @@
 {
   // !!! This configuration is just an example and is used in .eslintrc !!!
   "$schema": "node_modules/eslint-plugin-project-structure/folderStructure.schema.json",
-  "structure": {
-    "children": [
-      { "name": "*" },
-      {
-        "name": "src",
-        "children": [
-          { "ruleId": "hooks_folder" },
-          { "ruleId": "examples_folder" },
-          {
-            "name": "features",
-            "ruleId": "components_folder"
-          }
-        ]
-      }
-    ]
-  },
+  "structure": [
+    { "name": "*" },
+    {
+      "name": "src",
+      "children": [
+        { "ruleId": "hooks_folder" },
+        { "ruleId": "examples_folder" },
+        {
+          "name": "features",
+          "ruleId": "components_folder"
+        }
+      ]
+    }
+  ],
   "rules": {
     "hooks_folder": {
       "name": "hooks",

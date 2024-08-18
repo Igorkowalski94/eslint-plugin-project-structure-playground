@@ -3,22 +3,20 @@
 import { createFolderStructure } from "eslint-plugin-project-structure";
 
 export const folderStructureConfig = createFolderStructure({
-  structure: {
-    children: [
-      { name: "*" },
-      {
-        name: "src",
-        children: [
-          { ruleId: "hooks_folder" },
-          { ruleId: "examples_folder" },
-          {
-            name: "features",
-            ruleId: "components_folder",
-          },
-        ],
-      },
-    ],
-  },
+  structure: [
+    { name: "*" },
+    {
+      name: "src",
+      children: [
+        { ruleId: "hooks_folder" },
+        { ruleId: "examples_folder" },
+        {
+          name: "features",
+          ruleId: "components_folder",
+        },
+      ],
+    },
+  ],
   rules: {
     hooks_folder: {
       name: "hooks",
