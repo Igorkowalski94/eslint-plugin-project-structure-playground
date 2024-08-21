@@ -10,9 +10,6 @@ Playground for [eslint-plugin-project-structure](https://github.com/Igorkowalski
 
 ## Getting started
 
-> [!WARNING]
-> Folder needs to contain at least one file/subfolder with file to be validated. ESLint and Git ignore empty folders, so they won’t be pushed to the repository and will only remain visible locally.
-
 ### Step 1 (optional)
 
 The project uses ESLint's new config system as default. If you want to test on the old eslint config, follow these steps:
@@ -41,6 +38,9 @@ npm run lint
 ```
 
 #### General Information:
+
+> [!WARNING]
+> Folder needs to contain at least one file/subfolder with file to be validated. ESLint and Git ignore empty folders, so they won’t be pushed to the repository and will only remain visible locally.
 
 - All files in the `features` folder have all possible correct imports. You can try importing other files to see the errors.
 - Examples of individual functionalities can be found in the `examples` folder.
