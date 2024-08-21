@@ -9,9 +9,14 @@
       "allowImportsFrom": []
     },
     {
-      "name": "Api and consts files",
-      "pattern": "**/*.(api|consts).ts",
-      "allowImportsFrom": [["{dirname}/*"]]
+      "name": "Consts files",
+      "pattern": "**/*.consts.ts",
+      "allowImportsFrom": ["{dirname}/*.types.ts"]
+    },
+    {
+      "name": "Api files",
+      "pattern": "**/*.api.ts",
+      "allowImportsFrom": ["{dirname}/*.(types|consts).ts"]
     },
     {
       "name": "Features",
