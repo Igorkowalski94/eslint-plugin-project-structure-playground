@@ -1,7 +1,7 @@
 // Feature2
-import * as _Feature2_api from "features/Feature2/feature2.api";
 import * as _Feature2_consts from "features/Feature2/feature2.consts";
 import * as _Feature2 from "features/Feature2/Feature2";
+import * as _Feature2_types from "features/Feature2/feature2.types";
 
 // Feature2 components
 import * as _Feature2_SimpleComponent from "features/Feature2/components/SimpleComponent";
@@ -19,6 +19,4 @@ import * as _Feature3 from "features/Feature3";
 import * as _useComplexGlobalHook from "hooks/useComplexGlobalHook/useComplexGlobalHook";
 import * as _useSimpleGlobalHook from "hooks/useSimpleGlobalHook";
 
-export type Feature2Type = "";
-export interface Feature2Interface {}
-export enum FEATURE_2_ENUM {}
+export const feature2Api = "";

@@ -36,17 +36,14 @@ export const independentModulesConfig = createIndependentModules({
     features: [["features/**", "{notPrivateFilesAndFolders}"]],
 
     familyImports: [
-      ["{family}/*", "!{family}/*.test.ts"],
+      ["{family}/*", "!{family}/*.test.(ts|tsx)"],
 
       [
         "{family}/{privateFolders}/*/*",
         "!{family}/{privateFolders}/*/{privateFiles}",
       ],
 
-      [
-        "{family}/{privateFolders}/*",
-        "!{family}/{privateFolders}/{privateFiles}",
-      ],
+      ["{family}/*/*", "!{family}/*/{privateFiles}"],
     ],
   },
 });

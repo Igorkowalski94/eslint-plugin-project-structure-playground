@@ -1,11 +1,10 @@
-// useSimpleHook
-import * as _useSimpleHook from "features/Feature2/components/ComplexComponent/hooks/useSimpleHook";
-
 // ComplexComponent
-import * as _ComplexComponent_api from "features/Feature2/components/ComplexComponent/complexComponent.api";
 import * as _ComplexComponent_consts from "features/Feature2/components/ComplexComponent/complexComponent.consts";
 import * as _ComplexComponent from "features/Feature2/components/ComplexComponent/ComplexComponent";
 import * as _ComplexComponent_types from "features/Feature2/components/ComplexComponent/complexComponent.types";
+
+// ComplexComponent hooks
+import * as _ComplexComponent_useSimpleHook from "features/Feature2/components/ComplexComponent/hooks/useSimpleHook";
 
 // ComplexComponent components
 import * as _ComplexComponent_SimpleComponent from "features/Feature2/components/ComplexComponent/components/SimpleComponent";
@@ -31,4 +30,4 @@ import * as _Feature3 from "features/Feature3";
 import * as _useComplexGlobalHook from "hooks/useComplexGlobalHook/useComplexGlobalHook";
 import * as _useSimpleGlobalHook from "hooks/useSimpleGlobalHook";
 
-export const useSimpleHookTest = "";
+export const complexComponentApi = "";

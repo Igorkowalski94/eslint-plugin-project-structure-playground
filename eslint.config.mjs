@@ -65,13 +65,28 @@ export default tseslint.config(
     },
     rules: {
       ...eslint.configs.recommended.rules,
-      "@typescript-eslint/no-empty-object-type": "off",
       "project-structure/folder-structure": ["error", folderStructureConfig],
       "project-structure/independent-modules": [
         "error",
         independentModulesConfig,
       ],
       "project-structure/naming-rules": ["error", ...namingRulesConfig],
+
+      "no-duplicate-imports": "error",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-empty-object-type": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          args: "all",
+          vars: "all",
+          varsIgnorePattern: "^_",
+          argsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
     },
   }
 );

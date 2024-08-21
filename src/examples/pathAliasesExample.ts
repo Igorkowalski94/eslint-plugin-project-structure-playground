@@ -1,1 +1,1 @@
-import "@stories/component.stories";
+import * as _stories from "@stories/component.stories";
