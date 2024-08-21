@@ -43,7 +43,10 @@ export const independentModulesConfig = createIndependentModules({
         "!{family}/{privateFolders}/*/{privateFiles}",
       ],
 
-      ["{family}/*/*", "!{family}/*/{privateFiles}"],
+      [
+        "{family}/{privateFolders}/*",
+        "!{family}/{privateFolders}/{privateFiles}",
+      ],
     ],
   },
 });
