@@ -40,7 +40,25 @@ or
 npm run lint
 ```
 
-#### Folder structure:
+#### General Information:
+
+- All files in the `features` folder have all possible correct imports. You can try importing other files to see the errors.
+- Examples of individual functionalities can be found in the `examples` folder.
+- If you have any questions or need help creating a configuration that meets your requirements, **[click here](https://github.com/Igorkowalski94/eslint-plugin-project-structure/discussions)**.
+
+#### General project rules:
+
+- Variables in `.const.ts` files must follow `SNAKE_CASE`.
+- Interfaces and types in `.types.ts` files must follow `PascalCase`.
+- Enums in `.types.ts` files must follow `SNAKE_CASE`.
+- All `.ts` files must contain only one main function. The main function should be named `{filename_camelCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
+- All `.tsx` files must contain only one main function. The main function should be named `{filename_PascalCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
+- All nested functions and variables in `.ts` and `.tsx` files must follow `{camelCase}`.
+- `.types.ts` files can only import from `node_modules` and nothing else.
+- `.consts.ts` files can only import from `.types.ts` files located in the same directory.
+- `.api.ts` files can only import from `.api.ts` and `.types.ts` files located in the same directory.
+
+#### Folder structure and independent module rules:
 
 ```
 .
@@ -80,8 +98,8 @@ npm run lint
             │   └── 📂 ComplexComponent               // ComplexComponent family.
             │       ├── 📁 components (recursion)     // Private / Public for ComplexComponent family.
             │       ├── 📁 hooks (recursion)          // Private / Public for ComplexComponent family.
-            │       ├── 📄 complexComponent.types.ts   // Private / Public for ComplexComponent family.
             │       ├── 📄 complexComponent.api.ts     // Private / Public for ComplexComponent family.
+            │       ├── 📄 complexComponent.types.ts   // Private / Public for ComplexComponent family.
             │       ├── 📄 complexComponent.consts.ts  // Private / Public for ComplexComponent family.
             │       ├── 📄 ComplexComponent.test.tsx   // Private.
             │       └── 📄 ComplexComponent.tsx        // Private / Public for ComplexComponent family / Public for Feature1 family / Public for SimpleComponent.tsx.
