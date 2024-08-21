@@ -6,6 +6,16 @@ export const independentModulesConfig = createIndependentModules({
   debugMode: false,
   modules: [
     {
+      name: "Types files",
+      pattern: "**/*.types.ts",
+      allowImportsFrom: [],
+    },
+    {
+      name: "Api and consts files",
+      pattern: "**/*.(api|consts).ts",
+      allowImportsFrom: [["{dirname}/*"]],
+    },
+    {
       name: "Features",
       pattern: "features/**",
       allowImportsFrom: ["{familyImports}", "{globalHooks}", "{features}"],

@@ -4,6 +4,16 @@
   "debugMode": false,
   "modules": [
     {
+      "name": "Types files",
+      "pattern": "**/*.types.ts",
+      "allowImportsFrom": []
+    },
+    {
+      "name": "Api and consts files",
+      "pattern": "**/*.(api|consts).ts",
+      "allowImportsFrom": [["{dirname}/*"]]
+    },
+    {
       "name": "Features",
       "pattern": "features/**",
       "allowImportsFrom": ["{familyImports}", "{globalHooks}", "{features}"]
@@ -34,17 +44,14 @@
     "features": [["features/**", "{notPrivateFilesAndFolders}"]],
 
     "familyImports": [
-      ["{family}/*", "!{family}/*.test.ts"],
+      ["{family}/*", "!{family}/*.test.(ts|tsx)"],
 
       [
         "{family}/{privateFolders}/*/*",
         "!{family}/{privateFolders}/*/{privateFiles}"
       ],
 
-      [
-        "{family}/{privateFolders}/*",
-        "!{family}/{privateFolders}/{privateFiles}"
-      ]
+      ["{family}/*/*", "!{family}/*/{privateFiles}"]
     ]
   }
 }
