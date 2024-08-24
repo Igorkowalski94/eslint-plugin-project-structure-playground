@@ -48,9 +48,11 @@ npm run lint
 
 #### General project rules:
 
-- Variables in `.const.ts` files must follow `SNAKE_CASE`.
-- Interfaces and types in `.types.ts` files must follow `PascalCase`.
-- Enums in `.types.ts` files must follow `SNAKE_CASE`.
+- Variables in `.const.ts` files must follow `{SNAKE_CASE}`.
+- `.consts.ts` files may only contain variables.
+- Interfaces and types in `.types.ts` files must follow `{PascalCase}`.
+- Enums in `.types.ts` files must follow `[SNAKE_CASE}`.
+- `.types.ts` files may only contain interfaces, types and enums.
 - All `.ts` files must contain only one main function. The main function should be named `{filename_camelCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
 - All `.tsx` files must contain only one main function. The main function should be named `{filename_PascalCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
 - All nested functions and variables in `.ts` and `.tsx` files must follow `{camelCase}`.
