@@ -58,7 +58,7 @@ npm run lint
 - All nested functions and variables in `.ts` and `.tsx` files must follow `{camelCase}`.
 - `.types.ts` files can only import from `node_modules` and nothing else.
 - `.consts.ts` files can only import from `.types.ts` files located in the same directory.
-- `.api.ts` files can only import from `.api.ts` and `.types.ts` files located in the same directory.
+- `.api.ts` files can only import from `.consts.ts` and `.types.ts` files located in the same directory.
 
 #### Folder structure and independent module rules:
 
