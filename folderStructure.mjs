@@ -18,16 +18,17 @@ export const folderStructureConfig = createFolderStructure({
     },
   ],
   rules: {
+    hook_folder: {
+      name: "use{PascalCase}",
+      children: [
+        { ruleId: "hooks_folder" },
+        { name: "{parentName}(.(test|api|types|consts))?.ts" },
+      ],
+    },
     hooks_folder: {
       name: "hooks",
       children: [
-        {
-          name: "use{PascalCase}",
-          children: [
-            { ruleId: "hooks_folder" },
-            { name: "{parentName}(.(test|api|types|consts))?.ts" },
-          ],
-        },
+        { ruleId: "hook_folder" },
         { name: "use{PascalCase}(.test)?.ts" },
       ],
     },
