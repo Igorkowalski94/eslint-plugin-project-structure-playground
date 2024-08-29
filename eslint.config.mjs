@@ -65,6 +65,7 @@ export default tseslint.config(
     },
     rules: {
       ...eslint.configs.recommended.rules,
+
       "project-structure/folder-structure": ["error", folderStructureConfig],
       "project-structure/independent-modules": [
         "error",
