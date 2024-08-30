@@ -37,7 +37,7 @@ or
 npm run lint
 ```
 
-## 📋 General Information:
+## 📋 General Information
 
 > [!WARNING]
 > Folder needs to contain at least one file/subfolder with file to be validated. ESLint and Git ignore empty folders, so they won’t be pushed to the repository and will only remain visible locally.
@@ -46,7 +46,7 @@ npm run lint
 - Examples of individual functionalities can be found in the `examples` folder.
 - If you have any questions or need help creating a configuration that meets your requirements, **[click here](https://github.com/Igorkowalski94/eslint-plugin-project-structure/discussions)**.
 
-## 📋 General project rules:
+## 📋 General project rules
 
 - Variables in `.const.ts` files must follow `{SNAKE_CASE}`.
 - `.consts.ts` files may only contain variables.
@@ -60,7 +60,7 @@ npm run lint
 - `.consts.ts` files can only import from `.types.ts` files located in the same directory.
 - `.api.ts` files can only import from `.consts.ts` and `.types.ts` files located in the same directory.
 
-## 📁 Folder structure and independent module rules:
+## 📁 Folder structure and independent module rules
 
 ```
 .
