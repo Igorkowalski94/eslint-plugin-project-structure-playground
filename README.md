@@ -1,6 +1,6 @@
 <h1 align="center">🕹️🦉eslint-plugin-project-structure-playground</h1>
 
-<p align="center">Playground for <a href="https://github.com/Igorkowalski94/eslint-plugin-project-structure/tree/main">eslint-plugin-project-structure</a>.</p>
+<p align="center">Playground for <a href="https://github.com/Igorkowalski94/eslint-plugin-project-structure#readme">eslint-plugin-project-structure</a>.</p>
 
 ## 📚 Documentation
 
