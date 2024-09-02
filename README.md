@@ -1,4 +1,4 @@
-<h1 align="center">🕹️🦉eslint-plugin-project-structure-playground</h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Video%20Game.png" alt="Folder" width="60" height="60" /><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Owl.png" alt="Owl" width="60" height="60" /></br>eslint-plugin-project-structure-playground</h1>
 
 <p align="center">Playground for <a href="https://github.com/Igorkowalski94/eslint-plugin-project-structure#readme">eslint-plugin-project-structure</a>.</p>
 
