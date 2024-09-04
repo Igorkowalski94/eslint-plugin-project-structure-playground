@@ -22,7 +22,7 @@ export const folderStructureConfig = createFolderStructure({
       name: "use{PascalCase}",
       children: [
         { ruleId: "hooks_folder" },
-        { name: "{parentName}(.(test|api|types|consts))?.ts" },
+        { name: "{folderName}(.(test|api|types|consts))?.ts" },
       ],
     },
     hooks_folder: {
@@ -37,8 +37,8 @@ export const folderStructureConfig = createFolderStructure({
       children: [
         { ruleId: "components_folder" },
         { ruleId: "hooks_folder" },
-        { name: "{parentName}(.(api|types|consts))?.ts" },
-        { name: "{ParentName}(.test)?.tsx" },
+        { name: "{folderName}(.(api|types|consts))?.ts" },
+        { name: "{FolderName}(.test)?.tsx" },
       ],
     },
     components_folder: {
@@ -75,7 +75,10 @@ export const folderStructureConfig = createFolderStructure({
         { name: "{PascalCase}.test.tsx" },
         {
           name: "{PascalCase}.tsx",
-          enforceExistence: ["stories/{name}.stories.tsx", "{Name}.test.tsx"],
+          enforceExistence: [
+            "stories/{nodeName}.stories.tsx",
+            "{NodeName}.test.tsx",
+          ],
         },
       ],
     },

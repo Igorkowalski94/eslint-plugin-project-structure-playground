@@ -1,106 +1,103 @@
-[
+{
   // !!! This configuration is just an example and is used in .eslintrc !!!
-  { "filePattern": "**/*.(test|api|stories).(ts|tsx)" },
-  {
-    "filePattern": "**/*.consts.ts",
-    "fileRootRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "rules": [
-        {
-          "selector": "variable",
-          "format": ["{SNAKE_CASE}"]
-        }
-      ]
-    }
-  },
-  {
-    "filePattern": "**/*.types.ts",
-    "fileRootRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "rules": [
-        {
-          "selector": ["interface", "type"],
-          "format": ["{PascalCase}"]
-        },
-        {
-          "selector": "enum",
-          "format": ["{SNAKE_CASE}"]
-        }
-      ]
-    }
-  },
-  {
-    "filePattern": "**/*.tsx",
-    "fileRootRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "errors": {
-        "variable": "Move all variables to .consts file.",
-        "enum": "Move all enums to .types file."
-      },
-      "rules": [
-        {
-          "selector": "arrowFunction",
-          "format": ["{filename_PascalCase}"]
-        },
-        {
-          "selector": ["interface", "type"],
-          "format": [
-            "{filename_PascalCase}Props",
-            "{filename_PascalCase}Return"
-          ]
-        }
-      ]
+  "$schema": "node_modules/eslint-plugin-project-structure/namingRules.schema.json",
+  "filesRules": [
+    { "filePattern": "**/*.(test|api|stories).(ts|tsx)" },
+    {
+      "filePattern": "**/*.consts.ts",
+      "fileRootRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "rules": [
+          {
+            "selector": "variable",
+            "format": "{SNAKE_CASE}"
+          }
+        ]
+      }
     },
-    "fileRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "rules": [
-        {
-          "selector": "arrowFunction",
-          "format": ["{camelCase}"]
-        },
-
-        {
-          "selector": ["variable"],
-          "format": ["{camelCase}"]
-        }
-      ]
-    }
-  },
-  {
-    "filePattern": "**/*.ts",
-    "fileRootRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "errors": {
-        "variable": "Move all variables to .consts file.",
-        "enum": "Move all enums to .types file."
-      },
-      "rules": [
-        {
-          "selector": "arrowFunction",
-          "format": ["{filename_camelCase}"]
-        },
-        {
-          "selector": ["interface", "type"],
-          "format": [
-            "{filename_PascalCase}Props",
-            "{filename_PascalCase}Return"
-          ]
-        }
-      ]
+    {
+      "filePattern": "**/*.types.ts",
+      "fileRootRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "rules": [
+          {
+            "selector": ["interface", "type"],
+            "format": "{PascalCase}"
+          },
+          {
+            "selector": "enum",
+            "format": "{SNAKE_CASE}"
+          }
+        ]
+      }
     },
-    "fileRules": {
-      "allowOnlySpecifiedSelectors": true,
-      "rules": [
-        {
-          "selector": "arrowFunction",
-          "format": ["{camelCase}"]
+    {
+      "filePattern": "**/*.tsx",
+      "fileRootRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "errors": {
+          "variable": "Move all variables to .consts file.",
+          "enum": "Move all enums to .types file."
         },
+        "rules": [
+          {
+            "selector": "arrowFunction",
+            "format": "{FileName}"
+          },
+          {
+            "selector": ["interface", "type"],
+            "format": ["{FileName}Props", "{FileName}Return"]
+          }
+        ]
+      },
+      "fileRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "rules": [
+          {
+            "selector": "arrowFunction",
+            "format": "{camelCase}"
+          },
 
-        {
-          "selector": ["variable"],
-          "format": ["{camelCase}"]
-        }
-      ]
+          {
+            "selector": "variable",
+            "format": "{camelCase}"
+          }
+        ]
+      }
+    },
+    {
+      "filePattern": "**/*.ts",
+      "fileRootRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "errors": {
+          "variable": "Move all variables to .consts file.",
+          "enum": "Move all enums to .types file."
+        },
+        "rules": [
+          {
+            "selector": "arrowFunction",
+            "format": ["{fileName}"]
+          },
+          {
+            "selector": ["interface", "type"],
+            "format": ["{FileName}Props", "{FileName}Return"]
+          }
+        ]
+      },
+      "fileRules": {
+        "allowOnlySpecifiedSelectors": true,
+        "rules": [
+          {
+            "selector": "arrowFunction",
+            "format": "{camelCase}"
+          },
+
+          {
+            "selector": "variable",
+            "format": "{camelCase}"
+          }
+        ]
+      }
     }
-  }
-]
+  ]
+}
