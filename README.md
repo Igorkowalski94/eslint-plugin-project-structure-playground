@@ -53,7 +53,7 @@ npm run lint
 
 - All files in the `features` folder have all possible correct imports. You can try importing other files to see the errors.
 - Examples of individual functionalities can be found in the `examples` folder.
-- If you have any questions or need help creating a configuration that meets your requirements, **[click here](https://github.com/Igorkowalski94/eslint-plugin-project-structure/discussions)**.
+- If you have any questions or need help creating a configuration that meets your requirements, [click here](https://github.com/Igorkowalski94/eslint-plugin-project-structure/discussions/new?category=help).
 
 ## 📋 General project rules
 
@@ -129,6 +129,6 @@ npm run lint
 
 <h2><picture><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Party%20Popper.png" alt="Party Popper" width="35" height="35" /></picture> Sponsors</h2>
 
-<p align="center">A big thank you to all the <a href="https://github.com/sponsors/Igorkowalski94" target=”_blank”>sponsors</a> for your support! You give me the strength and motivation to keep going!</p>
+<p align="center">A big thank you to all the <a href="https://github.com/sponsors/Igorkowalski94">sponsors</a> for your support! You give me the strength and motivation to keep going!</p>
 <p align="center"> Thanks to you, I can help others create their ideal projects!</p>
 <p align="center"><picture><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Love-You%20Gesture.png" alt="Love-You Gesture" width="60px" height="60px" /></picture><p>
