@@ -37,7 +37,7 @@ export const folderStructureConfig = createFolderStructure({
       children: [
         { ruleId: "components_folder" },
         { ruleId: "hooks_folder" },
-        { name: "{folderName}(.(api|types|consts))?.ts" },
+        { name: "{folderName}.(api|types|consts).ts" },
         { name: "{FolderName}(.test)?.tsx" },
       ],
     },
