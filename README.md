@@ -9,7 +9,7 @@
 </p>
 <h1 align="center"><picture><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Video%20Game.png" alt="Video game" width="60" height="60" /></picture><picture><img src="https://raw.githubusercontent.com/Igorkowalski94/eslint-plugin-project-structure/main/images/Owl.png" alt="Owl" width="60" height="60" /></picture></br>eslint&#8209;plugin&#8209;project-structure&#8209;playground</h1>
 
-<p align="center">Playground for <a href="https://github.com/Igorkowalski94/eslint-plugin-project-structure#readme">eslint-plugin-project-structure</a>.</p>
+<p align="center">Playground for <a href="https://github.com/Igorkowalski94/eslint-plugin-project-structure/wiki/Plugin-homepage#root">eslint-plugin-project-structure</a>.</p>
 
 ## 📚 Documentation
 
