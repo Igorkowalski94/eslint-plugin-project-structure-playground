@@ -62,8 +62,8 @@ npm run lint
 - Interfaces and types in `.types.ts` files must follow `{PascalCase}`.
 - Enums in `.types.ts` files must follow `{SNAKE_CASE}`.
 - `.types.ts` files may only contain interfaces, types and enums.
-- All `.ts` files must contain only one main function. The main function should be named `{filename_camelCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
-- All `.tsx` files must contain only one main function. The main function should be named `{filename_PascalCase}`. The main function can have an interface or type which must be named `{filename_PascalCase}Props` or `{filename_PascalCase}Return`.
+- All `.ts` files must contain only one main function. The main function should be named `{fileName}`. The main function can have an interface or type which must be named `{FileName}Props` or `{FileName}Return`.
+- All `.tsx` files must contain only one main function. The main function should be named `{FileName}`. The main function can have an interface or type which must be named `{FileName}Props` or `{FileName}Return`.
 - All nested functions and variables in `.ts` and `.tsx` files must follow `{camelCase}`.
 - `.types.ts` files can only import from `node_modules` and nothing else.
 - `.consts.ts` files can only import from `.types.ts` files located in the same directory.
