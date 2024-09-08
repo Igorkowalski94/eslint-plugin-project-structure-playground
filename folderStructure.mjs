@@ -18,6 +18,28 @@ export const folderStructureConfig = createFolderStructure({
     },
   ],
   rules: {
+    hook_folder2: {
+      name: "use{PascalCase}",
+      children: [
+        {
+          name: "hooks",
+          children: [
+            {
+              name: "hooks",
+              children: [
+                {
+                  name: "hooks",
+                  children: [{ name: "use{PascalCase}(.test)?.ts" }],
+                },
+                { name: "use{PascalCase}(.test)?.ts" },
+              ],
+            },
+            { name: "use{PascalCase}(.test)?.ts" },
+          ],
+        },
+        { name: "{folderName}(.(test|api|types|consts))?.ts" },
+      ],
+    },
     hook_folder: {
       name: "use{PascalCase}",
       children: [
@@ -27,6 +49,7 @@ export const folderStructureConfig = createFolderStructure({
     },
     hooks_folder: {
       name: "hooks",
+      // folderRecursionLimit: 2,
       children: [
         { ruleId: "hook_folder" },
         { name: "use{PascalCase}(.test)?.ts" },
