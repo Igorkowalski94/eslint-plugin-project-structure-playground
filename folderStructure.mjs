@@ -27,6 +27,7 @@ export const folderStructureConfig = createFolderStructure({
     },
     hooks_folder: {
       name: "hooks",
+      folderRecursionLimit: 2,
       children: [
         { ruleId: "hook_folder" },
         { name: "use{PascalCase}(.test)?.ts" },
