@@ -22,6 +22,10 @@ export const folderStructureConfig = createFolderStructure({
       name: "use{PascalCase}",
       children: [
         { ruleId: "hooks_folder" },
+
+        // This rule will only be considered when the final nesting of the hooks_folder rule occurs.
+        { name: "hooks", children: [{ name: "use{PascalCase}(.test)?.ts" }] },
+
         { name: "{folderName}(.(test|api|types|consts))?.ts" },
       ],
     },
