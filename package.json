@@ -17,6 +17,6 @@
     "eslint": "^9.10.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0",
-    "eslint-plugin-project-structure": "^2.4.1"
+    "eslint-plugin-project-structure": "^2.4.2"
   }
 }
