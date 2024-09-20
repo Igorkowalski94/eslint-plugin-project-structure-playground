@@ -78,7 +78,7 @@ npm run lint
 ```
 .
 ├── ...
-├── 📄 namingRules.mjs
+├── 📄 fileComposition.mjs
 ├── 📄 folderStructure.mjs
 ├── 📄 independentModules.mjs
 ├── 📄 eslint.config.mjs
