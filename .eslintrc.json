@@ -46,7 +46,7 @@
       "rules": {
         "project-structure/folder-structure": "error",
         "project-structure/independent-modules": "error",
-        "project-structure/naming-rules": "error",
+        "project-structure/file-composition": "error",
 
         "no-duplicate-imports": "error",
         "no-unused-vars": "off",
