@@ -11,7 +11,7 @@ import {
 
 import { folderStructureConfig } from "./folderStructure.mjs";
 import { independentModulesConfig } from "./independentModules.mjs";
-import { namingRulesConfig } from "./namingRules.mjs";
+import { fileCompositionConfig } from "./fileComposition.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -71,7 +71,7 @@ export default tseslint.config(
         "error",
         independentModulesConfig,
       ],
-      "project-structure/naming-rules": ["error", namingRulesConfig],
+      "project-structure/file-composition": ["error", fileCompositionConfig],
 
       "no-duplicate-imports": "error",
       "no-unused-vars": "off",

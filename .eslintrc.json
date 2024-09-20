@@ -37,7 +37,7 @@
       "settings": {
         "project-structure/folder-structure-config-path": "folderStructure.json",
         "project-structure/independent-modules-config-path": "independentModules.json",
-        "project-structure/naming-rules-config-path": "namingRules.json"
+        "project-structure/file-composition-config-path": "fileComposition.json"
       },
       "extends": [
         "eslint:recommended",

@@ -1,8 +1,8 @@
 // @ts-check
 
-import { createNamingRules } from "eslint-plugin-project-structure";
+import { createFileComposition } from "eslint-plugin-project-structure";
 
-export const namingRulesConfig = createNamingRules({
+export const fileCompositionConfig = createFileComposition({
   filesRules: [
     { filePattern: "**/*.(test|api|stories).(ts|tsx)" },
     {
