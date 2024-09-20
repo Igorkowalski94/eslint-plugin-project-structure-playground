@@ -19,7 +19,7 @@
 
 - [project-structure/folder-structure](https://github.com/Igorkowalski94/eslint-plugin-project-structure/wiki/project%E2%80%91structure-%E2%80%8Bfolder%E2%80%91structure#root)
 - [project-structure/independent-modules](https://github.com/Igorkowalski94/eslint-plugin-project-structure/wiki/project%E2%80%91structure-%E2%80%8Bindependent%E2%80%91modules#root)
-- [project-structure/naming-rules](https://github.com/Igorkowalski94/eslint-plugin-project-structure/wiki/project%E2%80%91structure-%E2%80%8Bnaming%E2%80%91rules#root)
+- [project-structure/file-composition](https://github.com/Igorkowalski94/eslint-plugin-project-structure/wiki/project%E2%80%91structure-%E2%80%8Bfile%E2%80%91composition#root)
 
 ## 🏁 Getting started
 
@@ -30,7 +30,7 @@ The project uses ESLint's new config system as default. If you want to test on t
 - Remove package.json
 - Remove eslint.config.mjs
 - Remove independentModules.mjs
-- Remove namingRules.mjs
+- Remove fileComposition.mjs
 - Remove folderStructure.mjs
 - Rename packageLegacyConfig.json to package.json
 
