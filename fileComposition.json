@@ -5,99 +5,108 @@
     { "filePattern": "**/*.(test|api|stories).(ts|tsx)" },
     {
       "filePattern": "**/*.consts.ts",
-      "fileRootRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "rules": [
-          {
-            "selector": "variable",
-            "format": "{SNAKE_CASE}"
-          }
-        ]
-      }
+      "allowOnlySpecifiedSelectors": true,
+      "rules": [{ "selector": "variable", "format": "{SNAKE_CASE}" }]
     },
     {
       "filePattern": "**/*.types.ts",
-      "fileRootRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "rules": [
-          {
-            "selector": ["interface", "type"],
-            "format": "{PascalCase}"
-          },
-          {
-            "selector": "enum",
-            "format": "{SNAKE_CASE}"
-          }
-        ]
-      }
+      "allowOnlySpecifiedSelectors": true,
+      "rules": [
+        { "selector": ["interface", "type"], "format": "{PascalCase}" },
+        { "selector": "enum", "format": "{SNAKE_CASE}" }
+      ]
     },
     {
       "filePattern": "**/*.tsx",
-      "fileRootRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "errors": {
+      "allowOnlySpecifiedSelectors": {
+        "error": {
           "variable": "Move all variables to .consts file.",
           "enum": "Move all enums to .types file."
-        },
-        "rules": [
-          {
-            "selector": "arrowFunction",
-            "format": "{FileName}"
-          },
-          {
-            "selector": ["interface", "type"],
-            "format": ["{FileName}Props", "{FileName}Return"]
-          }
-        ]
+        }
       },
-      "fileRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "rules": [
-          {
-            "selector": "arrowFunction",
-            "format": "{camelCase}"
-          },
-
-          {
-            "selector": "variable",
-            "format": "{camelCase}"
-          }
-        ]
-      }
+      "rootSelectorsLimits": [
+        { "selector": ["interface", "type"], "limit": 2 }
+      ],
+      "rules": [
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileExport",
+          "positionIndex": 0,
+          "format": "{FileName}Props"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileRoot",
+          "positionIndex": 0,
+          "format": "Props"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileExport",
+          "positionIndex": 1,
+          "format": "{FileName}Return"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileRoot",
+          "positionIndex": 1,
+          "format": "Return"
+        },
+        {
+          "selector": "arrowFunction",
+          "scope": "fileExport",
+          "positionIndex": 2,
+          "format": "{FileName}"
+        },
+        { "selector": "arrowFunction", "format": "{camelCase}" },
+        { "selector": "variable", "format": "{camelCase}" }
+      ]
     },
     {
       "filePattern": "**/*.ts",
-      "fileRootRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "errors": {
+      "allowOnlySpecifiedSelectors": {
+        "error": {
           "variable": "Move all variables to .consts file.",
           "enum": "Move all enums to .types file."
-        },
-        "rules": [
-          {
-            "selector": "arrowFunction",
-            "format": ["{fileName}"]
-          },
-          {
-            "selector": ["interface", "type"],
-            "format": ["{FileName}Props", "{FileName}Return"]
-          }
-        ]
+        }
       },
-      "fileRules": {
-        "allowOnlySpecifiedSelectors": true,
-        "rules": [
-          {
-            "selector": "arrowFunction",
-            "format": "{camelCase}"
-          },
-
-          {
-            "selector": "variable",
-            "format": "{camelCase}"
-          }
-        ]
-      }
+      "rootSelectorsLimits": [
+        { "selector": ["interface", "type"], "limit": 2 }
+      ],
+      "rules": [
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileExport",
+          "positionIndex": 0,
+          "format": "{FileName}Props"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileRoot",
+          "positionIndex": 0,
+          "format": "Props"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileExport",
+          "positionIndex": 1,
+          "format": "{FileName}Return"
+        },
+        {
+          "selector": ["interface", "type"],
+          "scope": "fileRoot",
+          "positionIndex": 1,
+          "format": "Return"
+        },
+        {
+          "selector": "arrowFunction",
+          "scope": "fileExport",
+          "positionIndex": 2,
+          "format": "{fileName}"
+        },
+        { "selector": "arrowFunction", "format": "{camelCase}" },
+        { "selector": "variable", "format": "{camelCase}" }
+      ]
     }
   ]
 }
