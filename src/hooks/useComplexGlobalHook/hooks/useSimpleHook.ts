@@ -7,6 +7,6 @@ import * as _useComplexGlobalHook_types from "hooks/useComplexGlobalHook/useComp
 // Global hooks
 import * as _useSimpleGlobalHook from "hooks/useSimpleGlobalHook";
 
-export const useSimpleHook = () => "";
 export type UseSimpleHookProps = "";
 export type UseSimpleHookReturn = "";
+export const useSimpleHook = () => "";

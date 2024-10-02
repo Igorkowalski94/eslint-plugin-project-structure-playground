@@ -19,6 +19,6 @@ import * as _Feature3 from "features/Feature3";
 import * as _useComplexGlobalHook from "hooks/useComplexGlobalHook/useComplexGlobalHook";
 import * as _useSimpleGlobalHook from "hooks/useSimpleGlobalHook";
 
-export const useSimpleHook = () => "";
 export interface UseSimpleHookProps {}
 export type UseSimpleHookReturn = "";
+export const useSimpleHook = () => "";

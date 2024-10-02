@@ -9,6 +9,6 @@ import * as _useComplexGlobalHook_useSimpleHook from "hooks/useComplexGlobalHook
 // Global hooks
 import * as _useSimpleGlobalHook from "hooks/useSimpleGlobalHook";
 
-export const useComplexGlobalHook = () => "";
 export interface UseComplexGlobalHookProps {}
 export type UseComplexGlobalHookReturn = "";
+export const useComplexGlobalHook = () => "";
