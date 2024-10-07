@@ -10,10 +10,7 @@ export const folderStructureConfig = createFolderStructure({
       children: [
         { ruleId: "hooks_folder" },
         { ruleId: "examples_folder" },
-        {
-          name: "features",
-          ruleId: "components_folder",
-        },
+        { name: "features", ruleId: "components_folder" },
       ],
     },
   ],
@@ -65,10 +62,7 @@ export const folderStructureConfig = createFolderStructure({
     onlyFoldersExample_folder: {
       name: "onlyFoldersExample",
       children: [
-        {
-          name: "{camelCase}",
-          children: [{ name: "{camelCase}.ts" }],
-        },
+        { name: "{camelCase}", children: [{ name: "{camelCase}.ts" }] },
       ],
     },
 
@@ -80,10 +74,7 @@ export const folderStructureConfig = createFolderStructure({
     enforceExistenceExample_folder: {
       name: "enforceExistenceExample",
       children: [
-        {
-          name: "stories",
-          children: [{ name: "{camelCase}.stories.tsx" }],
-        },
+        { name: "stories", children: [{ name: "{camelCase}.stories.tsx" }] },
         { name: "{PascalCase}.test.tsx" },
         {
           name: "{PascalCase}.tsx",
@@ -102,9 +93,7 @@ export const folderStructureConfig = createFolderStructure({
         { ruleId: "extensionsExample_folder" },
         { ruleId: "onlyFilesExample_folder" },
         { ruleId: "onlyFoldersExample_folder" },
-        {
-          name: "pathAliasesExample.ts",
-        },
+        { name: "pathAliasesExample.ts" },
       ],
     },
   },

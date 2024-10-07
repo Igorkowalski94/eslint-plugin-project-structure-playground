@@ -8,10 +8,7 @@
       "children": [
         { "ruleId": "hooks_folder" },
         { "ruleId": "examples_folder" },
-        {
-          "name": "features",
-          "ruleId": "components_folder"
-        }
+        { "name": "features", "ruleId": "components_folder" }
       ]
     }
   ],
@@ -66,10 +63,7 @@
     "onlyFoldersExample_folder": {
       "name": "onlyFoldersExample",
       "children": [
-        {
-          "name": "{camelCase}",
-          "children": [{ "name": "{camelCase}.ts" }]
-        }
+        { "name": "{camelCase}", "children": [{ "name": "{camelCase}.ts" }] }
       ]
     },
 
@@ -103,9 +97,7 @@
         { "ruleId": "extensionsExample_folder" },
         { "ruleId": "onlyFilesExample_folder" },
         { "ruleId": "onlyFoldersExample_folder" },
-        {
-          "name": "pathAliasesExample.ts"
-        }
+        { "name": "pathAliasesExample.ts" }
       ]
     }
   }
