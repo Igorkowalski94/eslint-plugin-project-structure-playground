@@ -29,6 +29,7 @@ export const folderStructureConfig = createFolderStructure({
         { name: "{folderName}(.(test|api|types|consts))?.ts" },
       ],
     },
+
     hooks_folder: {
       name: "hooks",
       folderRecursionLimit: 2,
@@ -37,6 +38,7 @@ export const folderStructureConfig = createFolderStructure({
         { name: "use{PascalCase}(.test)?.ts" },
       ],
     },
+
     component_folder: {
       name: "{PascalCase}",
       children: [
@@ -46,6 +48,7 @@ export const folderStructureConfig = createFolderStructure({
         { name: "{FolderName}(.test)?.tsx" },
       ],
     },
+
     components_folder: {
       name: "components",
       children: [
@@ -53,10 +56,12 @@ export const folderStructureConfig = createFolderStructure({
         { name: "{PascalCase}(.test)?.tsx" },
       ],
     },
+
     onlyFilesExample_folder: {
       name: "onlyFilesExample",
       children: [{ name: "{camelCase}.ts" }],
     },
+
     onlyFoldersExample_folder: {
       name: "onlyFoldersExample",
       children: [
@@ -66,10 +71,12 @@ export const folderStructureConfig = createFolderStructure({
         },
       ],
     },
+
     extensionsExample_folder: {
       name: "extensionsExample",
       children: [{ name: "{SNAKE_CASE}.(svg|jpg|png|ico)" }],
     },
+
     enforceExistenceExample_folder: {
       name: "enforceExistenceExample",
       children: [
@@ -87,6 +94,7 @@ export const folderStructureConfig = createFolderStructure({
         },
       ],
     },
+
     examples_folder: {
       name: "examples",
       children: [

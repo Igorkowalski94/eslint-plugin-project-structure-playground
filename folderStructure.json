@@ -30,6 +30,7 @@
         { "name": "{folderName}(.(test|api|types|consts))?.ts" }
       ]
     },
+
     "hooks_folder": {
       "name": "hooks",
       "folderRecursionLimit": 2,
@@ -38,6 +39,7 @@
         { "name": "use{PascalCase}(.test)?.ts" }
       ]
     },
+
     "component_folder": {
       "name": "{PascalCase}",
       "children": [
@@ -47,6 +49,7 @@
         { "name": "{FolderName}(.test)?.tsx" }
       ]
     },
+
     "components_folder": {
       "name": "components",
       "children": [
@@ -54,10 +57,12 @@
         { "name": "{PascalCase}(.test)?.tsx" }
       ]
     },
+
     "onlyFilesExample_folder": {
       "name": "onlyFilesExample",
       "children": [{ "name": "{camelCase}.ts" }]
     },
+
     "onlyFoldersExample_folder": {
       "name": "onlyFoldersExample",
       "children": [
@@ -67,10 +72,12 @@
         }
       ]
     },
+
     "extensionsExample_folder": {
       "name": "extensionsExample",
       "children": [{ "name": "{SNAKE_CASE}.(svg|jpg|png|ico)" }]
     },
+
     "enforceExistenceExample_folder": {
       "name": "enforceExistenceExample",
       "children": [
@@ -88,6 +95,7 @@
         }
       ]
     },
+
     "examples_folder": {
       "name": "examples",
       "children": [
