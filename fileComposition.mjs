@@ -59,12 +59,7 @@ export const fileCompositionConfig = createFileComposition({
           format: "{FileName}",
         },
         {
-          selector: "arrowFunction",
-          scope: "nestedSelectors",
-          format: "{camelCase}",
-        },
-        {
-          selector: "variable",
+          selector: ["arrowFunction", "variable"],
           scope: "nestedSelectors",
           format: "{camelCase}",
         },
@@ -111,12 +106,7 @@ export const fileCompositionConfig = createFileComposition({
           format: "{fileName}",
         },
         {
-          selector: "arrowFunction",
-          scope: "nestedSelectors",
-          format: "{camelCase}",
-        },
-        {
-          selector: "variable",
+          selector: ["arrowFunction", "variable"],
           scope: "nestedSelectors",
           format: "{camelCase}",
         },
