@@ -58,8 +58,16 @@ export const fileCompositionConfig = createFileComposition({
           positionIndex: 2,
           format: "{FileName}",
         },
-        { selector: "arrowFunction", format: "{camelCase}" },
-        { selector: "variable", format: "{camelCase}" },
+        {
+          selector: "arrowFunction",
+          scope: "nestedSelectors",
+          format: "{camelCase}",
+        },
+        {
+          selector: "variable",
+          scope: "nestedSelectors",
+          format: "{camelCase}",
+        },
       ],
     },
     {
@@ -102,8 +110,16 @@ export const fileCompositionConfig = createFileComposition({
           positionIndex: 2,
           format: "{fileName}",
         },
-        { selector: "arrowFunction", format: "{camelCase}" },
-        { selector: "variable", format: "{camelCase}" },
+        {
+          selector: "arrowFunction",
+          scope: "nestedSelectors",
+          format: "{camelCase}",
+        },
+        {
+          selector: "variable",
+          scope: "nestedSelectors",
+          format: "{camelCase}",
+        },
       ],
     },
   ],
