@@ -93,7 +93,7 @@ export const folderStructureConfig = createFolderStructure({
         { ruleId: "extensionsExample_folder" },
         { ruleId: "onlyFilesExample_folder" },
         { ruleId: "onlyFoldersExample_folder" },
-        { name: "pathAliasesExample.ts" },
+        { name: "{camelCase}Example.(ts|tsx)" },
       ],
     },
   },
