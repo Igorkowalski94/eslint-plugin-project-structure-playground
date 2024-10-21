@@ -22,7 +22,7 @@
       "parser": "eslint-plugin-project-structure/parser",
       "plugins": ["project-structure"],
       "settings": {
-        "project-structure/folder-structure-config-path": "folderStructure.json"
+        "project-structure/folder-structure-config-path": "folderStructure.jsonc"
       },
       "rules": { "project-structure/folder-structure": "error" }
     },
@@ -35,9 +35,9 @@
       "parser": "@typescript-eslint/parser",
       "plugins": ["project-structure"],
       "settings": {
-        "project-structure/folder-structure-config-path": "folderStructure.json",
-        "project-structure/independent-modules-config-path": "independentModules.json",
-        "project-structure/file-composition-config-path": "fileComposition.json"
+        "project-structure/folder-structure-config-path": "folderStructure.jsonc",
+        "project-structure/independent-modules-config-path": "independentModules.jsonc",
+        "project-structure/file-composition-config-path": "fileComposition.jsonc"
       },
       "extends": [
         "eslint:recommended",
