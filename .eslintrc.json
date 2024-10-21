@@ -19,6 +19,7 @@
         "*.yml",
         "*.json"
       ],
+      "excludedFiles": ["projectStructure.cache.json"],
       "parser": "eslint-plugin-project-structure/parser",
       "plugins": ["project-structure"],
       "settings": {
