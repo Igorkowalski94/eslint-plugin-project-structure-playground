@@ -1,16 +1,11 @@
 {
   // !!! This configuration is just an example and is used in .eslintrc !!!
   "$schema": "node_modules/eslint-plugin-project-structure/folderStructure.schema.json",
+  "structureRoot": "src",
   "structure": [
-    { "name": "*" },
-    {
-      "name": "src",
-      "children": [
-        { "ruleId": "hooks_folder" },
-        { "ruleId": "examples_folder" },
-        { "name": "features", "ruleId": "components_folder" }
-      ]
-    }
+    { "ruleId": "hooks_folder" },
+    { "ruleId": "examples_folder" },
+    { "name": "features", "ruleId": "components_folder" }
   ],
   "rules": {
     "hook_folder": {
