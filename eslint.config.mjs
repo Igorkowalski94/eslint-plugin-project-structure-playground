@@ -21,7 +21,7 @@ export default tseslint.config(
    *  which must use the projectStructureParser to check all file extensions not supported by ESLint.
    */
   {
-    files: ["**"],
+    files: ["**"], // Check all file extensions.
     languageOptions: {
       parser: projectStructureParser,
     },
