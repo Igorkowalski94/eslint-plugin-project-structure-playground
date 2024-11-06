@@ -19,21 +19,9 @@ export default tseslint.config(
   /**
    *  Only for the project-structure/folder-structure rule,
    *  which must use the projectStructureParser to check all file extensions not supported by ESLint.
-   *  If you don't care about validating other file extensions, you can remove this section.
    */
   {
-    files: [
-      // You can expand the list with the file extensions you use.
-      "**/*.css",
-      "**/*.sass",
-      "**/*.less",
-      "**/*.svg",
-      "**/*.png",
-      "**/*.jpg",
-      "**/*.ico",
-      "**/*.yml",
-      "**/*.json",
-    ],
+    files: ["**"],
     languageOptions: {
       parser: projectStructureParser,
     },
@@ -65,8 +53,6 @@ export default tseslint.config(
     },
     rules: {
       ...eslint.configs.recommended.rules,
-
-      "project-structure/folder-structure": ["error", folderStructureConfig],
       "project-structure/independent-modules": [
         "error",
         independentModulesConfig,

@@ -4,21 +4,9 @@
     /**
      *  Only for the project-structure/folder-structure rule,
      *  which must use the projectStructureParser to check all file extensions not supported by ESLint.
-     *  If you don't care about validating other file extensions, you can remove this section.
      */
     {
-      "files": [
-        // You can expand the list with the file extensions you use.
-        "*.css",
-        "*.sass",
-        "*.less",
-        "*.svg",
-        "*.png",
-        "*.jpg",
-        "*.ico",
-        "*.yml",
-        "*.json"
-      ],
+      "files": ["**"],
       "excludedFiles": ["projectStructure.cache.json"],
       "parser": "eslint-plugin-project-structure/parser",
       "plugins": ["project-structure"],
@@ -36,7 +24,6 @@
       "parser": "@typescript-eslint/parser",
       "plugins": ["project-structure"],
       "settings": {
-        "project-structure/folder-structure-config-path": "folderStructure.jsonc",
         "project-structure/independent-modules-config-path": "independentModules.jsonc",
         "project-structure/file-composition-config-path": "fileComposition.jsonc"
       },
@@ -45,7 +32,6 @@
         "plugin:@typescript-eslint/recommended"
       ],
       "rules": {
-        "project-structure/folder-structure": "error",
         "project-structure/independent-modules": "error",
         "project-structure/file-composition": "error",
 
