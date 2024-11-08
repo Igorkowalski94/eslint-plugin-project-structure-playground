@@ -32,7 +32,7 @@
      *  Here you will add your normal rules, which use @typescript-eslint/parser.
      */
     {
-      "files": ["*.ts", "*.tsx", ".js", ".jsx"],
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["project-structure"],
       "settings": {

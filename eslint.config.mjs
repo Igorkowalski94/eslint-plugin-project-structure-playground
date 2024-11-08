@@ -22,6 +22,7 @@ export default tseslint.config(
    */
   {
     files: ["**"], // Check all file extensions.
+    ignores: ["projectStructure.cache.json"],
     languageOptions: {
       parser: projectStructureParser,
     },
