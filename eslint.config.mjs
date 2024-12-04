@@ -39,8 +39,9 @@ export default tseslint.config(
    */
   {
     extends: [
-      ...tseslint.configs.recommendedTypeChecked,
-      ...tseslint.configs.stylisticTypeChecked,
+      eslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.stylisticTypeChecked,
     ],
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mjs"],
     languageOptions: {
@@ -53,7 +54,6 @@ export default tseslint.config(
       "project-structure": projectStructurePlugin,
     },
     rules: {
-      ...eslint.configs.recommended.rules,
       "project-structure/independent-modules": [
         "error",
         independentModulesConfig,
