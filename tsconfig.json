@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "@stories/*": ["examples/enforceExistenceExample/stories/*"]
+      "@stories/*": ["examples/enforceExistenceExample/stories/*"],
+      "fixedAlias": [
+        "examples/enforceExistenceExample/stories/component.stories.tsx"
+      ]
     },
     "allowJs": true
   },
